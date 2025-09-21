@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfp485xgrb3cg"]
+
+[ext_resource type="PackedScene" uid="uid://qy630hs1pqx6" path="res://Games/Level1/Pong/PongPaddle.tscn" id="1_04guf"]
+
+[node name="Pong" type="Node2D"]
+
+[node name="PongPaddle" parent="." instance=ExtResource("1_04guf")]
+position = Vector2(83, 293)

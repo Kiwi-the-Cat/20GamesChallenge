@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://qy630hs1pqx6"]
+
+[ext_resource type="Script" uid="uid://dmmrwyni5kym0" path="res://Games/Level1/Pong/pong_paddle.gd" id="1_envar"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_fytwh"]
+size = Vector2(20, 120)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fytwh"]
+size = Vector2(34, 128)
+
+[node name="PongPaddle" type="Node2D"]
+script = ExtResource("1_envar")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 1)
+texture = SubResource("PlaceholderTexture2D_fytwh")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-15, 0)
+shape = SubResource("RectangleShape2D_fytwh")
